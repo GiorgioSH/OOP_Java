@@ -1,0 +1,26 @@
+
+public class Dog extends Creature {
+	public String Specie;
+	public String whatthedogsay;
+	
+	Dog(){} 
+	
+	Dog(String dogName, String dogSpecie){}
+	
+	Dog(String dogName){
+		super(dogName);
+		System.out.println(dogName+"says : "+this.sayhi());
+	}
+	
+	String getSpecie() {
+		return this.Specie;
+	}
+	
+	String setSpecie(String newDogSpecie) {
+		return this.Specie = newDogSpecie;
+	}
+	
+	String bark() {
+		return this.whatthedogsay = "Waf Waf";
+	}
+}

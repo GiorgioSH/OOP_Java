@@ -1,0 +1,66 @@
+
+
+class Creature implements Specie {
+	
+	p String firstName;
+	public String lastName;
+	public String nameOfChild;
+	
+	public boolean isparent;
+	
+	public float Height;
+	public float Weight;
+	public String breathstring = "I NEED AIR TO BREATH";
+	
+	public int birthday;
+	public int birthmonth;
+	public int birthyear;
+	
+	//Gender gender;
+	
+	public String res;
+	public String usergender;
+	
+	Creature() {}
+	
+	public String getFirstName() {
+		System.out.println(firstName);
+		return this.firstName;
+	}
+	
+	public String setFirstName(String newFirstName) {
+		
+		return this.firstName = newFirstName;
+		
+	}
+	
+	@Override
+	public String breath() {
+		
+		return this.breathstring;
+	}
+	
+	public String hasChild(String anotherPersonName) {
+		return this.nameOfChild = anotherPersonName;
+	}
+	
+	float getHeight() {
+		return this.Height;
+	}
+	
+	float setHeight(float newHeight) {
+		return this.Height = newHeight;
+	}
+	
+	String getdate(int bday, int bmonth, int year) {
+		this.res = Integer.toString(bday)+"/"+Integer.toString(bmonth)+"/"+Integer.toString(year);
+	    return res;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

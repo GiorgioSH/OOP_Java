@@ -1,0 +1,5 @@
+
+public interface Gender {
+	String getGender();
+	String setGender(String strGender);
+}

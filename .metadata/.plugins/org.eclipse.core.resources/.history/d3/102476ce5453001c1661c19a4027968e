@@ -1,0 +1,94 @@
+
+
+class Creature implements Specie {
+	
+	private String firstName;
+	private String lastName;
+	private String sentance;
+	
+	public String nameOfChild;
+	
+	public boolean isparent;
+	
+	public float Height;
+	public float Weight;
+	public String breathstring = "I NEED AIR TO BREATH";
+	
+	public int birthday;
+	public int birthmonth;
+	public int birthyear;
+	
+	
+	//Gender gender;
+	
+	public String res;
+	public String usergender;
+	
+	Creature() {}
+	
+	Creature(String userFname, String userLname) {
+		this.firstName = userFname;
+		this.lastName = userLname;
+		System.out.println("Your firstname is :\n ->"+this.getFirstName());
+		System.out.println("Your lastname is :\n ->"+this.getLastName());
+	}
+
+	Creature(String userFname) {
+		this.firstName = userFname;
+		System.out.println("Your name is :\n ->"+this.getFirstName());
+	}
+	
+	public String getFirstName() {
+		return this.firstName;
+	}
+	
+	public String getLastName() {
+		return this.lastName;
+	}
+	
+	public String setFirstName(String newFirstName) {
+		System.out.println("your new firstname is :\n ->"+newFirstName);
+		return this.firstName = newFirstName;	
+	}
+	public String setLastName(String newLastName) {
+			
+		return this.lastName = newLastName;	
+	}
+	
+	@Override
+	public String breath() {
+		return this.breathstring;
+	}
+	
+	@Override
+	public void saySomething(String stringArg) {
+		 this.sentance = stringArg;
+	}
+	
+	public String getSentance() {
+		return this.sentance;
+	}
+	
+	public String hasChild(String anotherPersonName) {
+		System.out.println(this.firstName+"has a child :\n ->"+anotherPersonName);
+		return this.nameOfChild = anotherPersonName;
+	}
+	
+	float getHeight() {
+		return this.Height;
+	}
+	
+	float setHeight(float newHeight) {
+		return this.Height = newHeight;
+	}
+	
+	String getdate(int bday, int bmonth, int year) {
+		this.res = Integer.toString(bday)+"/"+Integer.toString(bmonth)+"/"+Integer.toString(year);
+	    return res;
+	}
+
+
+
+	
+	
+}

@@ -1,0 +1,20 @@
+
+public class Dog extends Creature {
+	public String Specie;
+	public String temporaryString;
+	
+	Dog(){} 
+	Dog(String dogName, String dogSpecie){}
+	
+	String getSpecie() {
+		return this.Specie;
+	}
+	
+	String setSpecie(String newDogSpecie) {
+		return this.Specie = newDogSpecie;
+	}
+	Void bark() {
+		System.out.println("WAF WAF");
+		return null;
+	}
+}

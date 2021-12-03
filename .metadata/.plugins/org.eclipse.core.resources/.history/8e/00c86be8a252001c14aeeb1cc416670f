@@ -1,0 +1,29 @@
+
+public class Person extends Creature {
+	public String email;
+	public String adress;
+	
+	Person(){};
+	
+	Person(String userfirstname, String userlastname){
+		this.firstName = userfirstname;
+		this.lastName = userlastname;
+	}
+	
+	Person(String userfirstname, String userlastname, String userGender){
+		this.firstName = userfirstname;
+		this.lastName = userlastname;
+		//Gender::thegender = userGender;
+	}
+	
+	public String getemail() {
+		return this.email;
+	}
+	
+	public String getadress() {
+		return this.adress;
+	}
+	
+    //public String getgender();
+	
+}

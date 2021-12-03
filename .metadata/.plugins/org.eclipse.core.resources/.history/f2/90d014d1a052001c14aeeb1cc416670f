@@ -1,0 +1,10 @@
+
+public class Person extends Creature {
+	public String email;
+	public String adress;
+	
+	Person(){};
+	
+	
+	
+}

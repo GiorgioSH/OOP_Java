@@ -1,0 +1,88 @@
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+	
+		
+		createPersonSimple();
+		
+//		//EXEMPLE USER4
+//		System.out.println("USER3");
+//		System.out.println("Enter Dog name");
+//		String str = myObj.nextLine();
+//		Dog Dog2 = new Dog(str);
+		
+		
+		
+		
+//		//EXEMPLE USER3 
+//		System.out.println("USER3");
+//		Dog littleDog = new Dog("milou");
+//		//System.out.println("Dogs name ?");
+//		String tempStr = myObj.nextLine();
+//		littleDog.setFirstName(tempStr);
+				
+//		//EXEMPLE USER1
+//		System.out.println("USER1");
+//		Person User1 = new Person();		
+//		System.out.println("Enter username");
+//		String tempor;
+//		tempor = myObj.nextLine();
+//		User1.setFirstName(tempor);
+//		System.out.println("Enter your day of birth");
+//		User1.birthday= myObj.nextInt();
+//		System.out.println("Enter your month of birth");
+//		User1.birthmonth= myObj.nextInt();
+//		System.out.println("Enter your year of birth");
+//		User1.birthyear= myObj.nextInt();	
+//		User1.getdate(User1.birthday, User1.birthmonth, User1.birthyear);
+//		System.out.println("Your name is: " + User1.getFirstName()+"" + "And your date of birth is: "+User1.res);
+//				
+		
+//		//EXEMPLE USER2
+//		System.out.println("USER2");
+//		Person User2 = new Person("Jack","Sparrow");
+//		//System.out.println("Your name is :\n ->"+User2.getFirstName());
+//		Person UserChild = new Person();
+//		UserChild.setFirstName("JackJunior");
+//		//System.out.println(User2.getFirstName()+" has a child and his name is :\n ->"+User2.hasChild(UserChild.getFirstName()));		
+//		User2.setemail("Jack.Sparrow@pirates.com");
+//		System.out.println(User2.getFirstName()+"'s email is :\n ->"+User2.getemail());
+//		
+		//System.out.println("gf,b;");
+		// TODO Auto-generated method stub
+		//instanceof
+	}
+
+	/* (non-Java-doc)
+	 * @see java.lang.Object#Object()
+	 */
+	public Main() {
+		super();
+		
+
+	}
+	
+	public Person createPersonSimple() {
+		Scanner myObj = new Scanner(System.in);
+		
+		Person user = new Person();
+		System.out.println("USER1");
+		Person User1 = new Person();		
+		System.out.println("Enter username");
+		String tempor;
+		tempor = myObj.nextLine();
+		User1.setFirstName(tempor);
+		System.out.println("Enter your day of birth");
+		User1.birthday= myObj.nextInt();
+		System.out.println("Enter your month of birth");
+		User1.birthmonth= myObj.nextInt();
+		System.out.println("Enter your year of birth");
+		User1.birthyear= myObj.nextInt();	
+		User1.getdate(User1.birthday, User1.birthmonth, User1.birthyear);
+		System.out.println("Your name is: " + User1.getFirstName()+"" + "And your date of birth is: "+User1.res);
+		
+		return user;
+	}
+
+}
